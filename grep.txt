@@ -1,6 +1,9 @@
-##find files contain L20 in current direcotry 
-#grep -l "L20" *.uew
-##or
-#grep -l 'L20' *.uew
-##write to files:
-#grep -l 'L20' -R *.uew >info.txt
+#find files contain L20 in current direcotry 
+>grep -l "L20" *.uew
+#or
+>grep -l 'L20' *.uew
+#write to files:
+>grep -l 'L20' -R *.uew >info.txt
+
+#count lines containing ">"
+>grep -c ">" filename
