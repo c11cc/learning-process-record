@@ -1,4 +1,4 @@
-* install python 
+### install python 
 ```
 ./configure
 make
