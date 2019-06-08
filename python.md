@@ -1,37 +1,41 @@
-##install python 
+* install python 
+```
 ./configure
 make
 make install
+```
+* environment<br>
+`export PATH="$PATH:/usr/local/bin/python"`
 
-##environment
-export PATH="$PATH:/usr/local/bin/python"
+* install pythonwin<br> 
+` pip install pywin32 `
+* with source<br>
+`pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ pywin32`
 
-##install pythonwin 
-pip install pywin32
-#with source
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ pywin32
+* upgrade pip<br>
+` python -m pip install --upgrade.pip `
 
-##upgrade pip
-python -m pip install --upgrade.pip
+* start coding <br>
+`#_*_coding:utf-8 _*_`
+* or<br>
+`#_*_coding:unicode _*_`
 
-##start coding 
-#_*_coding:utf-8 _*_
-##or
-#_*_coding:unicode _*_
+* note<br>
+`start with #, or ''' for multilines.`
 
-##note
-start with #, or ''' for multilines.
-
-##string 
-\: escape character 
-##r/R:
+### string <br>
+`\: escape character `
+* r/R:<br>
+```
 >>>print("this is the first line with\n")
 this is the first line with
 >>>print(r"this is the second line with\n")
 this is the second line with\n
+```
 
-#variable
-#number
+
+### number<br>
+```
 >>>a,b,c,d=1,1.1,true,1+1j
 Traceback (most recent call last):
   File "<pyshell#6>", line 1, in <module>
@@ -45,8 +49,10 @@ Traceback (most recent call last):
 TypeError: type() takes 1 or 3 arguments
 >>>print(type(a),type(b),type(c),type(d))
 <class 'int'> <class 'float'> <class 'bool'> <class 'complex'>
+```
 
-#string
+### string<br>
+```
 >>>e,f="hello",'hello'
 >>>e,f
 ('hello','hello')
@@ -54,8 +60,10 @@ TypeError: type() takes 1 or 3 arguments
 5
 >>> type(f)
 <class 'str'>
+```
 
-#list
+### list<br>
+```
 >>> a=["I","like",'that','boy','\n']
 >>> a
 ['I', 'like', 'that', 'boy', '\n']
@@ -71,7 +79,6 @@ TypeError: type() takes 1 or 3 arguments
 >>> a[4]=''
 >>> a
 ['I', 'like', 'that', 'boy', '']
-
 >>> a=["I","like",'that','boy','\n']
 >>> a.remove("\n")
 >>> a
@@ -109,9 +116,10 @@ TypeError: type() takes 1 or 3 arguments
 >>> b.clear()
 >>> b
 []
+```
 
-
-#Tuple
+### Tuple
+```
 >>> b=("i",'like','that','boy','\n')
 >>> b
 ('i', 'like', 'that', 'boy', '\n')
@@ -147,11 +155,9 @@ TypeError: can only concatenate tuple (not "str") to tuple
 >>> bc=('become')
 >>> print(type(bb),type(bc))
 <class 'tuple'> <class 'str'>
-
 >>> d,e=('i','have'),('tried','this')
 >>> d+e
 ('i', 'have', 'tried', 'this')
-
 >>> a=['A','B','C']
 >>> b=tuple(a)
 >>> print(type(a),type(b))
@@ -160,10 +166,11 @@ TypeError: can only concatenate tuple (not "str") to tuple
 ['A', 'B', 'C']
 >>> b
 ('A', 'B', 'C') 
+```
 
 
-
-#set,like hash key in perl
+### set,like hash key in perl
+```
 >>> student={'Tom','Jerry','Fred','Jerry'}
 >>> student
 {'Fred', 'Tom', 'Jerry'}
@@ -181,8 +188,10 @@ True
 {'D', 'C'}
 >>> teacher^leader
 {'F', 'A', 'B', 'E'}
+```
 
-#dictionary, like hash in perl
+### dictionary, like hash in perl
+```
 >>> hash={'Tom':'A','Jerry':'B'}# declare method1 
 >>> hash
 {'Tom': 'A', 'Jerry': 'B'}
@@ -216,8 +225,10 @@ NameError: name 'A' is not defined
 >>> hashm=dict(Tom='A',Jerry='B',Kim='A')#declare method3
 >>> hashm
 {'Tom': 'A', 'Jerry': 'B', 'Kim': 'A'}
+```
 
-#calculation
+### calculation
+```
 >>> 5+4
 9
 >>> 5-4
@@ -255,8 +266,10 @@ NameError: name 'A' is not defined
 2.23606797749979j
 >>> pow(-5,1/2)
 (1.3691967456605067e-16+2.23606797749979j) 
+```
 
-#string and operator
+### string and operator
+```
 >>>print ("str"+'ing','operator'*2)
 string operatoroperator
 >>>e,f="hello",'hello'
@@ -270,8 +283,10 @@ hel
 ll 
 >>> print(e[-5:-3])
 he
+```
 
-# work in shell
+### working in shell
+```
 >>> b=0
 >>> while(b<9):
 	print(b)
@@ -306,7 +321,8 @@ SyntaxError: invalid syntax
 6
 7
 8
+```
 
-#break, perl last
-#countinue, perl next
-#pass, do nothing waiting for crtl+C;
+* break, perl last
+* countinue, perl next
+* pass, do nothing waiting for crtl+C;
