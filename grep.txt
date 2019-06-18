@@ -7,3 +7,6 @@
 
 #count lines containing ">"
 >grep -c ">" filename
+
+#using wcto do this
+>wc -l ">" filename
