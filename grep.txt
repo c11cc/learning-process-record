@@ -1,4 +1,4 @@
-#find files contain L20 in current direcotry 
+#find files contain "L20" in current direcotry 
 >grep -l "L20" *.uew
 #or
 >grep -l 'L20' *.uew
@@ -10,3 +10,6 @@
 
 #using wc to count lines
 >wc -l filename
+
+#using perl to get the sum value of the second column
+perl -alne "$sum+=$F[1] if /^\d/; END { print $sum}"  D3.1annotation.re
