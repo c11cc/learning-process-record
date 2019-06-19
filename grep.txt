@@ -13,3 +13,5 @@
 
 #using perl to get the sum value of the second column
 perl -alne "$sum+=$F[1] if /^\d/; END { print $sum}"  D3.1annotation.re
+
+#error usage perl -alen "$sum+=$F[1] if /^\d/; END { print $sum}"  D3.1annotation.re
