@@ -13,5 +13,15 @@
 
 #using perl to get the sum value of the second column
 perl -alne "$sum+=$F[1] if /^\d/; END { print $sum}"  D3.1annotation.re
-
 #error usage perl -alen "$sum+=$F[1] if /^\d/; END { print $sum}"  D3.1annotation.re
+
+#get base number of the fasta file
+cat genomic.fna | grep -v ">" | perl -lne "$num+=length $_; END {print $num}"
+#or
+#use this to get all base including \n bumber
+cat genomic.fna | grep -v ">" | wc -c
+#then get \n num
+cat genomic.fna | grep -v ">" | wc -l
+#then use the first to minus the second
+
+#perl -l: chomp
