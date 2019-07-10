@@ -24,4 +24,7 @@ cat genomic.fna | grep -v ">" | wc -c
 cat genomic.fna | grep -v ">" | wc -l
 #then use the first to minus the second
 
+#get the sequence of a fasta file
+cat seq.fa |grep -v ">" |cat >seq.seq
+
 #perl -l: chomp
