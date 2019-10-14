@@ -28,3 +28,17 @@ cat genomic.fna | grep -v ">" | wc -l
 cat seq.fa |grep -v ">" |cat >seq.seq
 
 #perl -l: chomp
+
+##LINUX
+#get the information of the file ,file size shown as kb:
+ls -lh 
+#shown the size of the directory
+du  -h
+#copy directory
+#with notice
+cp -ri
+#without notice
+cp -rf
+#change right,r4,w2,x1
+chmod xxx file
+
