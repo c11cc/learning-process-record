@@ -41,4 +41,11 @@ cp -ri
 cp -rf
 #change right,r4,w2,x1
 chmod xxx file
+#change right for all files and directory
+chmod -R XXX
+#delete repeated line
+sort -n test.txt | uniq
 
+##VIM
+#批量替换
+：% s///g
