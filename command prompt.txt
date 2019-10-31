@@ -49,3 +49,6 @@ sort -n test.txt | uniq
 ##VIM
 #批量替换
 ：% s///g
+
+#进制转换
+echo "obase=8 ; ibase=2 ; 111101101"  |  bc
