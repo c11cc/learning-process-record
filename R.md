@@ -23,3 +23,5 @@ y
 > k1=names(x)
 > typeof(k1)
 [1] "character"
+# failed to lock directory ‘C:\Users\user\Documents\R\win-library\3.6’ for modifying
+>unlink("C:/Users/albert/Documents/R/win-library/3.6/00LOCK", recursive = TRUE)
